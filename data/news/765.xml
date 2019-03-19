@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<doc><id>765</id><url>http://news.nankai.edu.cn/nkyw/system/2018/05/22/000383895.shtml</url><title>南开大学课题组科研成果助力生物能源研究--南开要闻</title><datetime>2018-05-22 00:00:00</datetime><body>南开新闻网讯(记者 乔仁铭)碳水化合物活性酶(CAZyme)是复杂碳水化合物代谢的最重要的酶之一，植物细胞壁中的复杂碳水化合物是动物微生物的主要食物来源，在可持续生物能源与生物材料生产原料等方面具有极大的潜能。同时,人类肠道微生物在其基因组中编码了数百种CAZyme基因，用以降解各种饮食和宿主碳水化合物。
+
+近期，南开大学计算机与控制工程学院张瀚教授课题组在CAZyme相关的生物能源领域中取得一系列研究成果。这些成果包括新一代自动化注释服务器的开发、深度注释信息在线数据库的提供、CAZyme家族系统发育树构建的提速设计与软件开发等。此外，张瀚课题组在具有批次效应误差的生物数据恢复上取得重要进展，所设计方法可较准确预测更细致因子信息，估计真实数据，还原数据真相。以上科研成果以论文形式，连续发表在生物信息学顶级期刊《核酸研究》(Nucleic Acids Research)和《生物信息学》(Bioinformatics)上。
+
+事实上，CAZyme不仅是生物能源中最重要的酶，对人类健康也非常重要。在生物能源领域，随着测序的植物及植物相关微生物基因组与宏基因组数量越来越庞大，进行CAZyme相关基因组数据挖掘的重要自动化工具研发与资源建设显得尤为迫切。此外，生物信息数据特别是基因表达数据普遍存在着批次效应引起的误差，这是令数据使用者非常苦恼的问题。因而预测引起误差的因子，以消除数据的实验批次误差影响，就成为数据科学研究者感兴趣的重要问题。
+
+张瀚课题组开发了新一代dbCAN服务器dbCAN2，为新测序CAZyme基因组提供全自动CAZyme功能注释的免费服务。dbCAN2服务器的设计目标为提供准确的自动化的CAZome(基因组的所有CAZymes)注释，为此在构造Profile-HMM模型表示CAZyme家族签名域(signature domain)的基础上，服务器集成了3个最新工具：可搜索dbCAN-HMM(隐马尔可夫模型)数据库的HMMER、可搜索CAZy预注释CAZyme序列数据库的DIAMOND、可搜索CAZyme短序列数据库的HOTPEP。以上3种工具输出结果的融合可以显著提高CAZome注释的准确性。此外，dbCAN2还可处理用户提交的核苷酸序列，提供预测物理连接的CAZyme基因聚类的服务，这是一个可用于识别微生物基因组或宏基因组中多糖利用位点(PULs)的非常有用的在线工具。用户可在dbCAN2服务器上提交新的已测序基因组，方便快速地得到其所包含CAZyme的数量与种类等功能注释信息。新一代服务器dbCAN2将成为CAZym研究人员获取全自动CAZyme注释的主要服务器。
+
+同样对于CAZyme，张瀚课题组建立了提供全面深度注释信息的在线数据库dbCAN-SEQ，为5349个细菌基因组提供计算出的CAZyme序列和功能注释数据。与其他CAZyme资源相比，dbCAN-SEQ给使用者提供如下新功能：允许批量下载所有序列与注释数据的下载页面；提供最全面功能注释数据的各CAZyme注释页；根据物种元数据如疾病、生活环境、氧需求、温度、新陈代谢等方面组织细菌基因组的元数据页；可识别物理连接的CAZyme酶基因聚类的工具；除此之外，它还提供快速高效数据查询的强大搜索功能。dbCAN-SEQ作为CAZym研究领域的现有主要生物信息数据库，将成为用于CAZyme研究的具有重要价值的Web资源。
+
+张瀚课题组还基于Profile隐马尔可夫模型之间距离矩阵比较的思想，设计了可快速有效构建系统发育树的方法流程，开发了一套可用于构建蛋白质家族(如碳水化合物活性酶和Pfam clans)系统发育树的在线服务。
+
+上述研究成果作为3篇论文分别发表于《核酸研究》(Nucleic Acids Research，2018.05.16在线发表，gky418)《核酸研究》(Nucleic Acids Research，2018，46，D516)《生物信息学》(Bioinformatics, 2017,33,1093)。以上论文第一作者分别为张瀚、硕士生黄乐和硕士生霍路阳，南开大学均为第一单位。论文通讯作者为张瀚与美国北伊利诺伊大学生物信息研究室Yanbin Yin副教授。
+
+此外，张瀚课题组提出了检测生物信息数据中隐含批次效应因子的数据驱动方法。基于数据驱动思路，利用凸优化聚类与半定矩阵分解技术，设计了两阶段批次效应因子预测的非参数方法DASC。它具备识别隐藏的层次批次效应的优点，并提供了可供研究者下载使用的R软件包(https://github.com/zhanglabNKU/DASC)。与从特征值分解出发的现有经典SVA系列方法不同的是，它对数据分布无特定要求，并大幅提高鲁棒性与准确性。此方法与软件可供实验数据的使用者用于预测数据中的批次效应误差，估计真实数据，在数据批次效应处理上具有广泛的应用价值。该成果作为论文发表在《生物信息学》(Bioinformatics,2018，34,1141)，硕士生益海冬为论文第一作者，张瀚为第一通讯作者，南开大学为第一单位。
+
+以上研究工作得到了国家自然科学基金项目海外及港澳学者合作研究基金、天津市应用基础与前沿技术研究计划项目的支持。在数据库研发中，得到论文共同作者南开大学计算机与控制工程学院大数据技术研究所杨征路教授、硕士生吴沛之的合作支持。
+
+张瀚课题组专注于统计机器学习、健康大数据、生物信息大数据分析等研究方向，已发表SCI、EI论文20余篇，其中影响因子大于7的论文7篇。课题组与美国莱斯大学统计与电子计算机系、贝勒医学院、佐治亚大学、北伊利诺伊大学、普度大学建立了密切的国际学术联系。
+
+相关论文成果在线链接：
+
+1、《dbCAN2: a meta server for automated carbohydrate-active enzyme annotation》(Nucleic Acids Research，2018.05.16在线发表，gky418)
+
+https://doi.org/10.1093/nar/gky418
+
+2、《dbCAN-seq: a database of carbohydrate-active enzyme (CAZyme) sequence and annotation 》(Nucleic Acids Research，2018，46，D516)
+
+https://doi.org/10.1093/nar/gkx894
+
+3、《pHMM-tree: phylogeny of profile hidden Markov models》(Bioinformatics, 2017,33,1093)
+
+https://doi.org/10.1093/bioinformatics/btw779
+
+4、《Detecting hidden batch factors through data-adaptive adjustment for biological effects》(Bioinformatics,2018，34,1141)
+
+https://doi.org/10.1093/bioinformatics/btx635</body></doc>

@@ -1,0 +1,7 @@
+.exe文件在dist文件夹中，请cmd进入PageRank文件夹下，然后把./PageRank/dist/Pagerank.exe拖入cmd中打开
+TopPage.txt是我们给出的程序执行结果文件
+txt.py是txt读写文件
+PageRank.py是没有矩阵分块计算的源代码
+PageRank2.py是加入矩阵分块计算功能的源代码
+具体的实现思路主义在实验报告中
+请保证三个源代码文件和WikiData.txt在同一文件夹下
