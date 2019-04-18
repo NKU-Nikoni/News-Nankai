@@ -1,12 +1,9 @@
 Deep News搜索引擎简介
 =====================
 
-这学期选了温老师的信息检索系统原理，第三次作业是要做一个Deep Web Search
-Engine。说实话，直到完成这次的代码编写和测试工作，我仍然对这个Deep的真正含义不是很清楚。
+该文档源文件为.tex格式，由pandoc转换而来。
 
-虽然不是很清楚，但是我不能就这么坐以待毙呀，想起温老师曾经说过，这次作业和普通的搜索引擎相比，就是爬虫的部分写法不太一样，我深以为然，开始一步一步动手做出这个项目。
-
-![搜索引擎体系结构[]{label="搜索引擎体系结构"}](screenshot001){#搜索引擎体系结构
+![搜索引擎体系结构[]{label="搜索引擎体系结构"}](screenshots/screenshot001.png){#搜索引擎体系结构
 width="0.5\linewidth"}
 
 通常，搜索引擎体系结构由四个部分构成，分别是数据抓取子系统、内容索引子系统、链接结构分析子系统、内容检索子系统。
@@ -44,30 +41,30 @@ Deep News使用说明
 
 运行../deep-news/main.exe(其实是快捷方式，本体是../deep-news/web/main.exe)
 
-![main.exe后台运行截图[]{label="main.exe后台运行截图"}](screenshot002){#main.exe后台运行截图
+![main.exe后台运行截图[]{label="main.exe后台运行截图"}](screenshots/screenshot002.png){#main.exe后台运行截图
 width="0.7\linewidth"}
 
 按照命令行提示，接下来打开浏览器，输入127.0.0.1:5000
 进入搜索引擎主界面。
 
 ![Deep News
-初始界面[]{label="Deep News 初始界面"}](screenshot003){#Deep News 初始界面
+初始界面[]{label="Deep News 初始界面"}](screenshots/screenshot003.png){#Deep News 初始界面
 width="0.6\linewidth"}
 
 在搜索栏输入想要搜索的内容，点击\"Search\"进行检索。Deep-News提供三种检索方式，可以在搜索栏下方点击\"相关度\"、\"时间\"或\"热度\"，再点击\"Ok\",修改检索方式。
 
-![检索页面示例1[]{label="检索页面示例1"}](screenshot004){#检索页面示例1
+![检索页面示例1[]{label="检索页面示例1"}](screenshots/screenshot004.png){#检索页面示例1
 width="0.8\linewidth"}
 
 页面底部可以自由跳页查看全部检索结果。
 
-![检索页面示例2[]{label="检索页面示例2"}](screenshot005){#检索页面示例2
+![检索页面示例2[]{label="检索页面示例2"}](screenshots/screenshot005.png){#检索页面示例2
 width="0.5\linewidth"}
 
-![检索结果示例[]{label="检索结果示例"}](screenshot006){#检索结果示例
+![检索结果示例[]{label="检索结果示例"}](screenshots/screenshot006.png){#检索结果示例
 width="0.5\linewidth"}
 
-![检索失败示例[]{label="检索失败示例"}](screenshot007){#检索失败示例
+![检索失败示例[]{label="检索失败示例"}](screenshots/screenshot007.png){#检索失败示例
 width="0.7\linewidth"}
 
 数据抓取子系统
@@ -209,7 +206,7 @@ IndexModule类的成员变量。分别是停用词、记录列表、配置文件
 
 数据库采用的是sqlite3，写入的记录格式下图所示。
 
-![倒排记录表可视化[]{label="倒排记录表可视化"}](screenshot008){#倒排记录表可视化
+![倒排记录表可视化[]{label="倒排记录表可视化"}](screenshots/screenshot008.png){#倒排记录表可视化
 width="0.7\linewidth"}
 
 链接结构分析子系统
