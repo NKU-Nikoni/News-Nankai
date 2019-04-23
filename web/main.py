@@ -1,6 +1,4 @@
 #!congding = utf-8
-__author__ = 'lcl'
-
 from flask import Flask, render_template, request
 
 from search_engine import SearchEngine
